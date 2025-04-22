@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <title>Ayush Gaurav</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/dist/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("hidden");
+    }
+  </script>
+
+</head>
+
+<body class="bg-black  h-full">
+  <nav class="fixed z-50 flex justify-between items-center w-full px-5 py-3 bg-gradient-to-br from-black via-gray-900 to-gray-800 shadow-md">
+    <div class="text-white text-xl font-bold">Ayush Gaurav</div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden sm:flex gap-6 text-white font-semibold">
+      <a href="#home" class="hover:text-purple-400 transition">Home</a>
+      <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+      <a href="#" class="hover:text-purple-400 transition">Email</a>
+      <a href="#about" class="hover:text-purple-400 transition">About Me</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button onclick="toggleMobileMenu()" class="sm:hidden text-white text-2xl">
+      <i class="fas fa-bars transition-all"></i>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="fixed top-16 right-0 w-2/3 bg-gray-900 text-white py-5 px-6 rounded-l-xl hidden transition-all duration-500 ease-in-out z-40">
+    <a href="#home" class="block py-2 hover:text-purple-300">Home</a>
+    <a href="#contact" class="block py-2 hover:text-purple-300">Contact</a>
+    <a href="#" class="block py-2 hover:text-purple-300">Email</a>
+    <a href="#about" class="block py-2 hover:text-purple-300">About Me</a>
+  </div>
+
+  <div class="bgimg min-w-screen min-h-screen opacity-30 fixed z-1">
+    <img class="min-w-full min-h-screen" src="bg.jpg" alt="">
+  </div>
+  <!-- hero section -->
+  <div class="main h-full z-9 relative   " id="home">
+    <div
+      class="hero1 min-h-screen flex flex-col items-center  bg-gradient-to-br from-black/80 via-purple-900/30 to-gray-900/80 backdrop-blur-lg text-white p-10 rounded-2xl shadow-xl
+      ">
+      <video src="animation.mp4" class="absolute h-full w-full object-cover opacity-30" muted
+        autoplay></video>
+      <div class="pic_logo lightborder  h-50 w-50 rounded-[50%] mt-35">
+        <img class="z-15 drop-shadow-black" src="ayushimg.png" alt="">
+
+      </div>
+      <div class="headline_1 text-white font-bold f1 text-center p-4 z-10">
+        <p class="flex justify-center mt-2 text-3xl">Hi !</p>
+        <p id="typed-text" class="  mt-3 sm:text-2xl">I am Ayush Gaurav — A Full Stack Web Developer & Tech Enthusiast.
+        </p>
+
+      </div>
+      <div
+        class="btn relative z-10 text-white flex flex-col items-center justify-center mt-5 gap-5 sm:gap-10 sm:flex-row sm:justify-center w-80 h-30 ">
+        <Button
+          class="px-8 flex items-center py-2 cursor-pointer  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-[5px]  ">Resume
+          <i class="fa-solid fa-angle-down ml-3"></i>
+        </Button>
+        <Button
+          class="px-16 py-2  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-[5px] ">CV</Button>
+      </div>
+
+    </div>
+
+    <!-- this is the line of the work -->
+
+    <div class="line bg-white h-[1px]"></div>
+    <!-- the line work ends here -->
+
+
+
+
+
+
+    <!-- this is the hero 2 section -->
+
+
+  <div class="skills_main min-h-100 bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur">
+    <h1 class="text-5xl flex justify-center pt-20 font-bold text-white f1">My Skills</h1>
+
+   <div class="sikill_boxes flex items-center  rounded-2xl gap-15 mx-3 flex-col sm:flex-row sm:gap-7 py-20 min-h-20 sm-py-15 flex-wrap justify-center">
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-4 shadow-2xl shadow-red-400">
+      <i class="fa-brands fa-html5 text-4xl text-red-500"></i>
+      <h2 class="text-2xl font-semibold text-white">HTML</h2>
+    </div>
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-4 shadow-2xl shadow-blue-400">
+      <i class="fa-brands fa-css text-4xl text-blue-400"></i>
+      <h2 class="text-2xl font-semibold text-white">CSS</h2>
+    </div>
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-4 shadow-2xl shadow-yellow-800">
+      <i class="fa-brands fa-js text-4xl text-amber-300"></i>
+      <JS class="text-2xl font-semibold text-white">JS</h2>
+    </div>
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-4 shadow-2xl shadow-green-400">
+      <i class="fa-brands fa-node text-5xl text-green-400"></i>
+      <h2 class="text-2xl font-semibold text-white">Node Js</h2>
+    </div>
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-2 shadow-2xl shadow-green-300">
+  <img class="w-15" src="mongo.png " alt="">
+      <h2 class="text-2xl font-semibold text-white">Mongo DB</h2>
+    </div>
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-4 shadow-2xl shadow-yellow-400">
+      <i class="fa-brands fa-js text-4xl text-amber-300"></i>
+      <h2 class="text-2xl font-semibold text-white">Express Js</h2>
+    </div>
+    <div class="boxes h-25 w-65  bg-gradient-to-br from-gray-900/80 via-white/10 to-gray-800/90 backdrop-blur rounded-2xl flex items-center justify-center gap-2 shadow-2xl shadow-blue-300">
+      <img class="w-15 pr-2" src="react.png" alt="">
+          <h2 class="text-2xl font-semibold text-white">React</h2>
+        </div>
+    
+   </div>
+
+    
+
+  </div>
+  <div class="line bg-white h-[1px]"></div>
+
+
+
+
+<!-- this is the hero3 section  -->
+
+<div class="hero3 min-h-screen relative  bg-blue-500/30 backdrop-blur-xl  " id="about">
+  <video src="about me vide.mp4" class="absolute h-full w-full object-cover opacity-30 z-1" muted
+  autoplay loop></video>
+<div class="flex items-center justify-center pt-4 z-10 relative">
+  <h1 class="text-5xl text-amber-50 f1 font-bold pt-8">About me</h1>
+</div>
+
+<div class="right-leftpanel flex flex-col items-center px-20 py-10 relative z-10">
+  <div class="left mt-10 pb-20">
+    <img class="w-45 sm:w-65" src="ayushimg.png" alt="">
+    
+    </div>
+    <div class="right ">
+      <div class="contents">
+        <p class="pt-25  text-white max-w-[600px] sm:w-290 text-center text-[20px] text-clip sm:text-2xl inline">
+          I am a passionate Full Stack Web Developer specializing in the MERN stack (MongoDB, Express.js, React.js, and Node.js), with strong skills in HTML, CSS, and JavaScript. Currently, I am pursuing a B.Tech in Computer Science and Engineering from LNCT, Bhopal (Madhya Pradesh). Alongside web development, I have a deep interest in Artificial Intelligence, Machine Learning, and Data Science, and I am actively exploring these fields to expand my knowledge. I aim to combine my web development expertise with AI to build innovative and intelligent digital solutions that solve real-world problems and create a meaningful impact.</p>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- this is the navbar fixed section -->
+<div class="rightnav">
+  <div class="navbox min-h-90 w-0 sm:w-15 bg-gradient-to-br from-black via-gray-900 to-gray-800  top-48 z-25 right-0 fixed  flex flex-col items-center text-2xl p-5 gap-8 text-white rounded-[5px]">
+    <i class="fa-brands fa-linkedin hover:text-purple-400 transition"></i>
+    <i class="fa-brands fa-twitter hover:text-purple-400 transition"></i>
+    <i class="fa-brands fa-facebook hover:text-purple-400 transition"></i>
+    <i class="fa-brands fa-instagram hover:text-purple-400 transition"></i>
+    <i class="fa-brands fa-whatsapp hover:text-purple-400 transition"></i>
+    <i class="fa-solid fa-envelope hover:text-purple-400 transition"></i>
+
+
+  </div>
+</div>
+ <!-- this is the contact me section -->
+  <!-- Contact Me Section -->
+<div id="contact"
+class="hero4 min-h-screen bg-gradient-to-brtext-white py-16 px-6 sm:px-20">
+<h1 class="text-4xl sm:text-5xl font-bold text-center mb-10 transition duration-500 ease-in-out text-white f1">Contact Me</h1>
+<form
+  class="max-w-3xl mx-auto p-9 rounded-2xl shadow-2xl transition-all duration-500 hover:shadow-purple-600/50 text-white">
+  <div class="mb-6 transition duration-300">
+    <label class="block mb-2 text-lg font-semibold" for="name">
+      <i class="fa-solid fa-user mr-2 text-blue-300"></i>Name
+    </label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"
+      class="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-400 transition duration-300 focus:scale-[1.01]"
+      required>
+  </div>
+
+  <div class="mb-6 transition duration-300">
+    <label class="block mb-2 text-lg font-semibold" for="email">
+      <i class="fa-solid fa-envelope mr-2 text-green-300"></i>Email
+    </label>
+    <input type="email" id="email" name="email" placeholder="Enter your email"
+      class="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-400 transition duration-300 focus:scale-[1.01]"
+      required>
+  </div>
+
+  <div class="mb-6 transition duration-300">
+    <label class="block mb-2 text-lg font-semibold" for="message">
+      <i class="fa-solid fa-message mr-2 text-yellow-300"></i>Message
+    </label>
+    <textarea id="message" name="message" rows="6" placeholder="Write your message..."
+      class="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-400 resize-none transition duration-300 focus:scale-[1.01]"
+      required></textarea>
+  </div>
+
+  <div class="flex justify-center">
+    <button type="submit"
+      class="bg-gradient-to-br from-purple-800 via-purple-600 to-purple-900 px-8 py-3 rounded-xl shadow-md hover:shadow-purple-400 text-lg font-semibold transition transform duration-300 hover:scale-105 active:scale-95">
+      <i class="fa-solid fa-paper-plane mr-2"></i>Send Message
+    </button>
+  </div>
+</form>
+</div>
+
+    
+   </div>
+  </div>
+  </div>
+  <footer class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white text-center py-6 mt-10">
+   
+    <p class="text-sm">&copy; 2025 Ayush Gaurav. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["Ayush Gaurav", "a Web Developer", "an AI Explorer", "a Tech Enthusiast 🚀"],
+      typeSpeed: 70,
+      backSpeed: 80,
+      startDelay: 1000,
+
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
